@@ -1,0 +1,41 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+error_log
+Thumbs.db
+.ftpquota
+.DS_Store
+.idea
+
+# .gitignore template for Wordpress: https://github.com/github/gitignore/blob/master/WordPress.gitignore
+*.log
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+wp-content/w3tc-config/
+wp-content/wflogs/
+
+wp-snapshots/
+
+/license.txt
+/readme.html
+/wp-config-sample.php
+/sitemap.xml
+/sitemap.xml.gz
+
+
+# Bare Minimum Git
+# http://ironco.de/bare-minimum-git/
+
+# ignore specific themes
+wp-content/themes/twenty*/
+wp-content/languages/themes/twenty*
+
+# ignore debug.log
+wp-content/debug.log

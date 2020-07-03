@@ -1,0 +1,91 @@
+/**
+ * @section b-text
+ *
+ * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ * !!!                                                     !!!
+ * !!! Please don't edit this file without a valid reason! !!!
+ * !!!                                                     !!!
+ * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ */
+.b-text {
+  @include clearfix;
+
+  h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote {
+    margin: 1em 0;
+    @include first-last-margin;
+  }
+
+  h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+
+  p {}
+
+  ul {}
+  ol {}
+  li {
+    margin: .5em 0;
+    @include first-last-margin;
+  }
+
+  dl {}
+  dt {}
+  dd {}
+
+  blockquote {
+    padding: 0 0 0 1em;
+    border-left: 2px solid $colorPrimary;
+  }
+
+  a {
+    color: $colorPrimary;
+    @include underline-hover;
+
+    &:hover {
+      color: lighten($colorPrimary, 10%);
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .alignright {
+    float: right;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  .alignleft {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+  .alignnone {
+
+  }
+
+  .wp-caption {
+    margin: 1em 0;
+  }
+
+  .wp-caption-text {
+    margin-top: 1em;
+  }
+
+  .size-auto,
+  .size-full,
+  .size-large,
+  .size-medium,
+  .size-thumbnail {
+    max-width: 100%;
+    height: auto;
+  }
+}

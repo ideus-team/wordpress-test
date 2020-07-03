@@ -1,0 +1,57 @@
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.l-html {
+
+}
+
+.l-body {
+  background: #fafafa;
+}
+
+
+/**
+ * @section wrapper
+ */
+.l-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+
+  .l-html.-device_mobile & {
+    width: $siteMobileWidth;
+  }
+}
+
+/**
+ * @section content
+ */
+.l-content {
+  @extend .g-clearfix;
+  position: relative;
+  margin: 0 auto;
+  padding: 25px 0 65px;
+  width: $site-width;
+
+  .l-html.-device_mobile & {
+    width: $siteMobileWidth;
+  }
+}
+
+
+/**
+ * @section main
+ */
+.l-contentText {
+  float: left;
+  display: block;
+  width: $contentWidth;
+
+  .l-html.-device_mobile & {
+    float: none;
+    width: $siteMobileWidth;
+  }
+}
